@@ -6,7 +6,7 @@ const scores = {
 // Cache elements often updated
 const homeEl = document.getElementById("score-home");
 const guestEl = document.getElementById("score-guest");
-const controlsHome = document.getElementNyId("controls-home");
+const controlsHome = document.getElementById("controls-home");
 const controlsGuest = document.getElementById("controls-guest");
 const resetBtn = document.getElementById("reset");
 
