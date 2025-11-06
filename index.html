@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Scoreboard</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="board">
+            <header class="board__header">
+                <h1>HOME</h1>
+                <h1>GUEST</h1>
+            </header>
+
+            <section class="board__scores">
+                <div class="score" id="score-home" aria-live="polite">0</div>
+                <div class="score" id="score-guest" aria-live="polite">0</div>
+            </section>
+
+            <section class="board__controls">
+                <div class="controls" id="controls-home" aria-label="Home score controls">
+                    <button class="btn" data-team="home" data-inc="1">+1</button>
+                    <button class="btn" data-team="home" data-inc="2">+2</button>
+                    <button class="btn" data-team="home" data-inc="3">+3</button>
+                </div>
+
+                <div class="controls" id="controls-guest" aria-label="Guest score controls">
+                    <button class="btn" data-team="guest" data-inc="1">+1</button>
+                    <button class="btn" data-team="guest" data-inc="2">+2</button>
+                    <button class="btn" data-team="guest" data-inc="3">+3</button>
+                </div>
+            </section>
+
+            <footer class="board__footer">
+                <button id="reset" class="btn btn--muted">Reset</button>
+            </footer>
+        </main>
+
+        <script>app.js</script>
+    </body>
+</html>
+
+</html>
